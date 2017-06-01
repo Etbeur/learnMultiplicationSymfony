@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Exercices list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Operation</th>
+                <th>Level</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for exercice in exercices %}
+            <tr>
+                <td><a href="{{ path('exercice_show', { 'id': exercice.id }) }}">{{ exercice.id }}</a></td>
+                <td>{{ exercice.name }}</td>
+                <td>{{ exercice.operation }}</td>
+                <td>{{ exercice.level }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('exercice_show', { 'id': exercice.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('exercice_edit', { 'id': exercice.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('exercice_new') }}">Create a new exercice</a>
+        </li>
+    </ul>
+{% endblock %}
