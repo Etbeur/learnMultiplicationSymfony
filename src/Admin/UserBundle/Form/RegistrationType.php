@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UserType extends AbstractType
+class RegistrationType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -17,6 +17,7 @@ class UserType extends AbstractType
                  //->add('email')
                  //->add('password')
                  ->add('age');
+         
     }
     
     /**

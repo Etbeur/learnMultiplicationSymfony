@@ -15,4 +15,3 @@ Réaliser un  site qui permattra, à ceux qui en ont envie, d'apprendre les tabl
 ##Techno utilisées: SYMFONY3, TWIG, JAVASCRIPT, BOOTSTRAP .
 
 Pour visiter la première version de ce site -> [LearnMultiplication](http://multiplication.pe.hu)
-,JS

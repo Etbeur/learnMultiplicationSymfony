@@ -22,7 +22,8 @@ class User extends BaseUser
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
-
+    
+    
     /**
      * @var int
      *
@@ -110,4 +111,5 @@ class User extends BaseUser
     {
         return $this->exercices;
     }
+
 }

@@ -31,21 +31,21 @@ class Exercice
     /**
      * @var string
      *
-     * @ORM\Column(name="operation", type="string", length=255, unique=true)
+     * @ORM\Column(name="operation", type="string", length=255, unique=false)
      */
     private $operation;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="level", type="integer", unique=true)
+     * @ORM\Column(name="level", type="integer", unique=false)
      */
     private $level;
     
         /**
      * @var int
      *
-     * @ORM\Column(name="result", type="integer", unique=true)
+     * @ORM\Column(name="result", type="integer", unique=false)
      */
     private $result;
     
@@ -161,5 +161,46 @@ class Exercice
     public function getResult()
     {
         return $this->result;
+    }
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->users = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add user
+     *
+     * @param \Admin\UserBundle\Entity\User $user
+     *
+     * @return Exercice
+     */
+    public function addUser(\Admin\UserBundle\Entity\User $user)
+    {
+        $this->users[] = $user;
+
+        return $this;
+    }
+
+    /**
+     * Remove user
+     *
+     * @param \Admin\UserBundle\Entity\User $user
+     */
+    public function removeUser(\Admin\UserBundle\Entity\User $user)
+    {
+        $this->users->removeElement($user);
+    }
+
+    /**
+     * Get users
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getUsers()
+    {
+        return $this->users;
     }
 }

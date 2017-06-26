@@ -31,21 +31,21 @@ class Exercice
     /**
      * @var string
      *
-     * @ORM\Column(name="operation", type="string", length=255, unique=true)
+     * @ORM\Column(name="operation", type="string", length=255, unique=false)
      */
     private $operation;
 
     /**
      * @var int
      *
-     * @ORM\Column(name="level", type="integer", unique=true)
+     * @ORM\Column(name="level", type="integer", unique=false)
      */
     private $level;
     
         /**
      * @var int
      *
-     * @ORM\Column(name="result", type="integer", unique=true)
+     * @ORM\Column(name="result", type="integer", unique=false)
      */
     private $result;
     
