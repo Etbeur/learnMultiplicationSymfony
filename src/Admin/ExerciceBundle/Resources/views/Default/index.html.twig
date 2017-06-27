@@ -1,1 +1,8 @@
-Hello World!
+{%  extends 'base.html.twig' %}
+
+{% block body %}
+        <h1>Bienvenue sur le panneau admin.</h1>
+        </div>
+        <p><a href="{{ url( 'exercice_index') }}">Allez au menu Admin Exercices</a></p>
+        <p><a href="{{ url('user_index') }}">Allez au menu Admin Users</a></p>
+{% endblock %}

@@ -9,9 +9,9 @@ and open the template in the editor.
 */
 
 body{
-    background-color: orange;
+    background-color: darkslategrey;
 }
 
-label{
-    color: red;
+label, a, h1, li, table{
+    color: orange;
 }
