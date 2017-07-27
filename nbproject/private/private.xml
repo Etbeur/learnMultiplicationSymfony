@@ -5,7 +5,6 @@
         <group>
             <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/src/Admin/ExerciceBundle/Entity/Exercice.php</file>
             <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/src/Admin/ExerciceBundle/Form/ExerciceType.php</file>
-            <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/src/Admin/UserBundle/Form/UserType.php</file>
             <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/app/Resources/views/exercice/show.html.twig</file>
             <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/src/Admin/ExerciceBundle/Controller/ExerciceController.php</file>
             <file>file:/home/romain/Desktop/simplon_contratPro/Symfony/learMultiplicationProject/src/Admin/UserBundle/Resources/views/Registration/register_content.html.twig</file>
